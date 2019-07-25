@@ -31,7 +31,8 @@ exports.create = (req, res) => {
                 duree: req.body.duree,
                 debut: req.body.debut,
                 place: req.body.place,
-                placeRes: req.body.placeRes
+                placeRes: req.body.placeRes,
+                visib:true
             });
             atelier.save()
                 .then(() => {
@@ -47,6 +48,23 @@ exports.create = (req, res) => {
         })
     
 };
+
+exports.cacherAtl = (req, res) =>{
+    Atelier.findOneAndUpdate({_id:req.params._id}, { 
+        visib:false
+    
+    },{new:true}).then(upd=>res.send(upd)
+    )
+}
+
+exports.affichAtl = (req, res) =>{
+    Atelier.findOneAndUpdate({_id:req.params._id}, {
+           
+        visib:true
+    
+    },{new:true}).then(upd=>res.send(upd)
+    )
+}
 
 //Get un par un image
 exports.findOneArticle =(req, res) =>{ 

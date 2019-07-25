@@ -14,7 +14,8 @@ const ArticleSchema = new Schema({
     image: { type: String, required: true },
     prix: { type: Number, required: true },
     place:{ type: Number, required: true },
-    placeRes:{ type: Number, required: true }
+    placeRes:{ type: Number, required: true },
+    visib:Boolean
 }, {
         timestamps: true
     });
