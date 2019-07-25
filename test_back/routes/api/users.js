@@ -12,5 +12,7 @@ router.get('/newArticle', Admin.findAllArticle);
 router.put('/putArticle/:profilId', Admin.update);
 router.get('/newArticle/:idUser', Admin.findOne);
 router.get('/newArticleImage/:image', Admin.findOneArticle);
+router.get('/cacherAtl/:_id', Admin.cacherAtl);
+router.get('/affichAtl/:_id', Admin.affichAtl);
 
 module.exports = router;

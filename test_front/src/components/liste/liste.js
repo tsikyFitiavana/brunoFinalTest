@@ -30,7 +30,7 @@ export default class ListTout extends Component {
             <div className="container-fluid">
 
                 {
-                    (this.state.produit.length > 0) ? (this.state.produit.map((obj) => {
+                    (this.state.produit.length > 0) ? (this.state.produit.filter((params)=>params.visib).map((obj) => {
                         return <div className="container-fluid">
                             <div id="ligne" className="row" key={obj._id}>
                                 <div className="container">

@@ -16,7 +16,7 @@ exports.createPart = (req, res) => {
                     nom: req.body.nom,
                     prenom: req.body.prenom,
                     email: req.body.email,
-                    place: req.body.place
+                    phone: req.body.phone
                 });
                 Atelier.findByIdAndUpdate(use._id, {
                     _id: use.id,
