@@ -16,7 +16,7 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
-import NewAtelier from "./components/newAtelier/NewAtelier";
+// import NewAtelier from "./components/newAtelier/NewAtelier";
 
 import "./App.css";
 
@@ -65,9 +65,10 @@ class App extends Component {
             <Route exact path="/Particulier" component={Particulier} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
-            <Route exact path="/newAtelier" component={NewAtelier} />
+            
             <Route exact path="/tousLesAteliers" component={ListTout} />
             <Switch>
+              {/* <PrivateRoute exact path="/dashboard/newAtelier" component={NewAtelier} /> */}
               <PrivateRoute exact path="/modifierAtl/:id" component={EditAtelier} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>

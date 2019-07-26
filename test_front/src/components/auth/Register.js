@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
-import './login.css';
+
+
 class Register extends Component {
   constructor() {
     super();
@@ -60,7 +61,6 @@ class Register extends Component {
 
     return (
       <div className="container">
-        <div id="feedback-form">
           <Link to="/" className="btn-flat waves-effect">
               <i className="material-icons left"></i>Accueil
           </Link>
@@ -173,14 +173,13 @@ class Register extends Component {
                     marginTop: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                  className="btn btn-large peach-gradient"
                 >
                   Crée
                 </button>
               </div>
             </form>
           </div>
-        </div>
       </div>
     );
   }

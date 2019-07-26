@@ -24,7 +24,7 @@ export default class Menu extends Component {
     render() {
         return (
             <div>
-                <MDBNavbar color="#d05c62" dark expand="md" id="navbar">
+                <MDBNavbar color="#d05c62" dark expand="md" id="navbar" className="fixed-top">
                     <MDBNavbarBrand>
                         <div id="contentlogo"><img src="logo.png" alt="logo" id="logo" /></div>
                         
@@ -38,9 +38,6 @@ export default class Menu extends Component {
                             </MDBNavItem>
                             <MDBNavItem>
                                 <MDBNavLink to="/tousLesAteliers" className="nav-header">Liste</MDBNavLink>
-                            </MDBNavItem>
-                            <MDBNavItem>
-                                <MDBNavLink to="#!" className="nav-header">Contacts</MDBNavLink>
                             </MDBNavItem>
                         </MDBNavbarNav>
                         <MDBNavbarNav right>

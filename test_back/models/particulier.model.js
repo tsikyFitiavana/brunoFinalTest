@@ -19,6 +19,8 @@ const ParticulierSchema = new Schema({
   phone: {
     type: String
   }
+
+
 });
 
-module.exports = User = mongoose.model("particuliers", ParticulierSchema);
+module.exports = mongoose.model("particulier", ParticulierSchema);

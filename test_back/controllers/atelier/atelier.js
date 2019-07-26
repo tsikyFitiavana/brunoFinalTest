@@ -32,6 +32,7 @@ exports.create = (req, res) => {
                 debut: req.body.debut,
                 place: req.body.place,
                 placeRes: req.body.placeRes,
+                date:req.body.date,
                 visib:true
             });
             atelier.save()
@@ -148,7 +149,8 @@ exports.update = (req, res) => {
                 duree: req.body.duree,
                 debut: req.body.debut,
                 place: req.body.place,
-                placeRes: req.body.placeRes
+                placeRes: req.body.placeRes,
+                date:req.body.date
         
     }, {new: true})
     .then(user => {

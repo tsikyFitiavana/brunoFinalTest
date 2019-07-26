@@ -56,10 +56,10 @@ class Login extends Component {
 
     return (
       <div className="container">
-        <div id="feedback-form">
-          <h2 class="header">S'identifier</h2>
+        <div id="feedback-form" className="peach-gradient">
+          <h2 class="header">CONNECTER</h2>
           <Link to="/" className="btn-flat waves-effect">
-              <i className="material-icons left">keyboard_backspace</i> retour à la page d'acceuil
+              <i className="material-icons left">keyboard_backspace</i> ACCUIEL
           </Link>
           <div>
             <form noValidate onSubmit={this.onSubmit}>

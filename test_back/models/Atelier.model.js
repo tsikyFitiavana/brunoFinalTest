@@ -5,9 +5,7 @@ const ArticleSchema = new Schema({
     _id: { type: Number, required: true },
     titre: { type: String, required: true },
     description: { type: String, required: true },
-    date: { 
-        type: Date,
-        default: Date.now },
+    date: { type: String,required: true },
     debut: { type: String, required: true },
     duree: { type: String, required: true },
     idUser: Number,
